@@ -1,6 +1,6 @@
 {
   "name": "simpllog",
-  "version": "1.0.0patch3",
+  "version": "1.0.0patch4",
   "description": "📝 A simple and VERY lightweight logger for Typescript and Javascript.",
   "main": "dist/index.js",
   "repository": {
