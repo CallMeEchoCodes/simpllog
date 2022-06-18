@@ -1,13 +1,26 @@
 {
   "name": "simpllog",
-  "version": "1.0.0patch4",
+  "version": "1.0.0patch5",
   "description": "📝 A simple and VERY lightweight logger for Typescript and Javascript.",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CallMeEchoCodes/simpllog.git"
   },
-  "keywords": [],
+  "keywords": [
+    "logger",
+    "log",
+    "console",
+    "typescript",
+    "javascript",
+    "simple",
+    "lightweight",
+    "simple-logger",
+    "simple-console",
+    "simple-log",
+    "simple-logger",
+    "simpllog"
+  ],
   "author": "CallMeEcho",
   "license": "MIT",
   "dependencies": {
