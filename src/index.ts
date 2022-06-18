@@ -1,7 +1,7 @@
 module.exports = class Logger {
   production: boolean;
   
-  constructor(process: NodeJS.Process, settings: { production: boolean; }) {
+  constructor(settings: { production: boolean; }) {
     this.production = settings.production;
   }
 
