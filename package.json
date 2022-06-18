@@ -1,5 +1,5 @@
 {
-  "name": "logger-i-guess",
+  "name": "smpllog",
   "version": "1.0.0",
   "description": "📝 A simple and VERY lightweight logger for Typescript and Javascript.",
   "main": "index.js",
