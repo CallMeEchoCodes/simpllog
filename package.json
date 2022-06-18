@@ -1,10 +1,11 @@
 {
   "name": "simpllog",
-  "version": "1.0.0",
+  "version": "1.0.0patch3",
   "description": "📝 A simple and VERY lightweight logger for Typescript and Javascript.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CallMeEchoCodes/simpllog.git"
   },
   "keywords": [],
   "author": "CallMeEcho",
