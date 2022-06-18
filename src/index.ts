@@ -1,6 +1,3 @@
-import { dim, bold, greenBright, magentaBright, blueBright, yellowBright, bgRed, bgRedBright } from 'colorette'
-import path from 'path';
-
 module.exports = class Logger {
   production: boolean;
   
@@ -15,31 +12,31 @@ module.exports = class Logger {
 
   private getTime() {
     const date = new Date();
-    return `${date.getFullYear()}-${date.getMonth()}-${date.getDay()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}.${date.getMilliseconds()}`;
+    return `\x1b[2m[${date.getFullYear()}-${date.getMonth()}-${date.getDay()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}.${date.getMilliseconds()}]\x1b[0m`;
   }
 
   public debug(message: string) {
     if (this.production) return
-    process.stdout.write(`${dim(`[${this.getTime()}]`)} ${magentaBright(bold('DEBUG'))}   ${dim(`[${this.getCallerFile()}]`)} ${message}\n`);
+    process.stdout.write(`${this.getTime()} \x1b[1;95mDEBUG\x1b[0m   \x1b[2m[${this.getCallerFile()}]\x1b[0m ${message}\n`);
   }
 
   public success(message: string) {
-    process.stdout.write(`${dim(`[${this.getTime()}]`)} ${greenBright(bold('SUCCESS'))} ${dim(`[${this.getCallerFile()}]`)} ${message}\n`);
+    process.stdout.write(`${this.getTime()} \x1b[1;92mSUCCESS\x1b[0m \x1b[2m[${this.getCallerFile()}]\x1b[0m ${message}\n`);
   }
 
   public info(message: string) {
-    process.stdout.write(`${dim(`[${this.getTime()}]`)} ${blueBright(bold('INFO'))}    ${dim(`[${this.getCallerFile()}]`)} ${message}\n`);
+    process.stdout.write(`${this.getTime()} \x1b[1;94mINFO\x1b[0m    \x1b[2m[${this.getCallerFile()}]\x1b[0m ${message}\n`);
   }
 
   public warn(message: string) {
-    process.stdout.write(`${dim(`[${this.getTime()}]`)} ${yellowBright(bold('WARN'))}    ${dim(`[${this.getCallerFile()}]`)} ${message}\n`);
+    process.stdout.write(`${this.getTime()} \x1b[1;93mWARN\x1b[0m    \x1b[2m[${this.getCallerFile()}]\x1b[0m ${message}\n`);
   }
 
   public error(message: string) {
-    process.stdout.write(`${dim(`[${this.getTime()}]`)} ${bgRed(bold('ERROR'))}   ${dim(`[${this.getCallerFile()}]`)} ${message}\n`);
+    process.stdout.write(`${this.getTime()} \x1b[41mERROR\x1b[0m   \x1b[2m[${this.getCallerFile()}]\x1b[0m ${message}\n`);
   }
 
   public fatal(message: string) {
-    process.stdout.write(`${dim(`[${this.getTime()}]`)} ${bgRedBright(bold('FATAL'))}   ${dim(`[${this.getCallerFile()}]`)} ${message}\n`);
+    process.stdout.write(`${this.getTime()} \x1b[101mFATAL\x1b[0m   \x1b[2m[${this.getCallerFile()}]\x1b[0m ${message}\n`);
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "simpllog",
-  "version": "1.0.0patch5",
+  "version": "1.0.1patch1",
   "description": "📝 A simple and VERY lightweight logger for Typescript and Javascript.",
   "main": "dist/index.js",
   "repository": {
@@ -24,7 +24,6 @@
   "author": "CallMeEcho",
   "license": "MIT",
   "dependencies": {
-    "colorette": "^2.0.19",
     "typescript": "^4.7.4"
   },
   "devDependencies": {
