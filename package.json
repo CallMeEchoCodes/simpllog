@@ -1,0 +1,19 @@
+{
+  "name": "logger-i-guess",
+  "version": "1.0.0",
+  "description": "📝 A simple and VERY lightweight logger for Typescript and Javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "CallMeEcho",
+  "license": "MIT",
+  "dependencies": {
+    "colorette": "^2.0.19",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0"
+  }
+}
