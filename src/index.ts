@@ -1,5 +1,3 @@
-// TODO: Add log levels (debug, success, info, warn, error, fatal)
-
 import { dim, bold, greenBright, magentaBright, blueBright, yellowBright, bgRed, bgRedBright } from 'colorette'
 import path from 'path';
 
