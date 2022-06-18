@@ -1,6 +1,6 @@
 {
   "name": "simpllog",
-  "version": "1.0.2patch1",
+  "version": "1.1.0",
   "description": "📝 A simple and VERY lightweight logger for Typescript and Javascript.",
   "main": "dist/index.js",
   "repository": {
@@ -22,11 +22,5 @@
     "simpllog"
   ],
   "author": "CallMeEcho",
-  "license": "MIT",
-  "dependencies": {
-    "typescript": "^4.7.4"
-  },
-  "devDependencies": {
-    "@types/node": "^18.0.0"
-  }
+  "license": "MIT"
 }
