@@ -4,21 +4,23 @@ module.exports = class Logger {
     }
   
     log(message, type) {
-        let type2 = null
-        let iserr = false
+        let t = null
+        let e = false
+        const a ="\x1b["
 
-        if (type === "DEBUG") type2 = "\x1b[95mDEBUG\x1b[0m  "
-        if (type === "SUCCESS") type2 = "\x1b[92mSUCCESS\x1b[0m"
-        if (type === "INFO") type2 = "\x1b[94mINFO\x1b[0m   "
-        if (type === "WARN") type2 = "\x1b[93mWARN\x1b[0m   "
-        if (type === "ERROR") { type2 = "\x1b[41mERROR\x1b[0m  "; iserr = true }
-        if (type === "FATAL") { type2 = "\x1b[101mFATAL\x1b[0m  "; iserr = true }
+        if (type === "DEBUG") t = `${a}95mDEBUG${a}0m  `
+        if (type === "DEBUG" && this.production) return
+        if (type === "SUCCESS") t = `${a}92mSUCCESS${a}0m`
+        if (type === "INFO") t = `${a}94mINFO${a}0m   `
+        if (type === "WARN") t = `${a}93mWARN${a}0m   `
+        if (type === "ERROR") { t = `${a}41mERROR${a}0m  `; e = true }
+        if (type === "FATAL") { t = `${a}101mFATAL${a}0m  `; e = true }
 
-        const ret = (new Error()).stack.split('\n')[3].split('(')[1].split(')')[0];
-        const date = new Date();
-        const printstr = `\x1b[2m[${date.getFullYear()}-${date.getMonth()}-${date.getDay()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}.${date.getMilliseconds()}]\x1b[0m ${type2} \x1b[2m[${ret.substr(0, ret.lastIndexOf(":"))}]\x1b[0m ${message}\n`
+        const r = (new Error()).stack.split('\n')[3].split('(')[1].split(')')[0];
+        const d = new Date();
+        const p = `${a}2m[${d.getFullYear()}-${d.getMonth()}-${d.getDay()} ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}.${d.getMilliseconds()}]${a}0m ${t} ${a}2m[${r.substr(0, r.lastIndexOf(":"))}]${a}0m ${message}\n`
 
-        if (iserr) process.stderr.write(printstr)
-        else process.stdout.write(printstr)
+        if (e) process.stderr.write(p)
+        else process.stdout.write(p)
     }
   }
