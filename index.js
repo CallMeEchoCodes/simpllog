@@ -17,7 +17,7 @@ module.exports = class Logger {
 
         const r = (new Error()).stack.split('\n')[3].split('(')[1].split(')')[0];
         const d = new Date();
-        const p = `${a}2m[${d.toISOString().replace(/T/, ' ').replace(/Z/, ''}]${a}0m ${t} ${a}2m[${r.substr(0, r.lastIndexOf(":"))}]${a}0m ${message}\n`
+        const p = `${a}2m[${d.toISOString().replace(/T/, ' ').replace(/Z/, '')}]${a}0m ${t} ${a}2m[${r.substr(0, r.lastIndexOf(":"))}]${a}0m ${message}\n`
 
         if (e) process.stderr.write(p)
         else process.stdout.write(p)
