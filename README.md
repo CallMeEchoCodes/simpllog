@@ -40,12 +40,6 @@ Simply make your changes and [test them with this file](https://gist.github.com/
 
 Before uploading your PR, run test one last time to check if there are any errors. If it has no errors, commit and push it! When submitting your PR make sure to send a screenshot of the output of the test file. If you added a new log level then make sure to send an updated version of the test file with your PR!
 
-
-## 🚀 Used By
-
-TBA
-
-
 ## 📜 License
 
 This software is licensed under the [MIT License](https://github.com/CallMeEchoCodes/simpllog/blob/master/LICENSE).
