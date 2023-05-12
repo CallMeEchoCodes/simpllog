@@ -1,4 +1,4 @@
-module.exports = class Logger {
+module.exports = class l {
     constructor(s) {
       this.p = s.production;
     }
