@@ -16,7 +16,7 @@
 
 ## 🤖 Why Use Simpllog?
 
-Simpllog is exactly as the name says. A simple logger. Simpllog is perfect for situations where you need to keep size as low as possible coming in at a tiny 817 bytes when minified! it's perfect for extreme size constraints. While Simpllog doesn't feature advanced features like JSON Output or tracing it's more than enough for any basic program such as a discord bot.
+Simpllog is exactly as the name says. A simple logger. Simpllog is perfect for situations where you need to keep size as low as possible coming in at a tiny 442 bytes when minified! it's perfect for extreme size constraints. While Simpllog doesn't feature advanced features like JSON Output or tracing it's more than enough for any basic program such as a discord bot.
 
 
 ## 🔧 Contributing
