@@ -2,7 +2,7 @@
 
 > 📝 A simple and VERY lightweight logger for Typescript and Javascript.
 
-[![npm version](https://img.shields.io/npm/v/simpllog)](https://www.npmjs.com/package/simpllog) [![license](https://img.shields.io/github/license/CallMeEchoCodes/simpllog)](https://github.com/CallMeEchoCodes/simpllog/blob/master/LICENSE) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/CallMeEchoCodes/simpllog/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+[![npm version](https://img.shields.io/npm/v/simpllog)](https://www.npmjs.com/package/simpllog) [![Bundlephobia](https://badgen.net/bundlephobia/minzip/simpllog)](https://bundlephobia.com/package/simpllog) [![license](https://img.shields.io/github/license/CallMeEchoCodes/simpllog)](https://github.com/CallMeEchoCodes/simpllog/blob/master/LICENSE) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/CallMeEchoCodes/simpllog/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 <img src="https://i.imgur.com/YhwCp4c.png" />
 
 
@@ -12,7 +12,6 @@
 - [Contributing](#-contributing)
 - [Used By](#-used-by)
 - [License](#-license)
-
 
 
 ## 🤖 Why Use Simpllog?
